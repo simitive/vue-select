@@ -204,7 +204,7 @@
     background: none;
     box-shadow: none;
     flex-grow: 1;
-    width: 4em;
+    width: 0;
   }
   .v-select.unsearchable input[type="search"] {
     opacity: 0;
