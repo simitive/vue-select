@@ -79,6 +79,7 @@
     flex-grow: 1;
     flex-wrap: wrap;
     padding: 0 2px;
+    position: relative;
   }
   .v-select .vs__actions {
     display: flex;
@@ -145,13 +146,17 @@
     line-height: 1.42857143; /* Normalize line height */
     margin: 4px 2px 0px 2px;
     padding: 0 0.25em;
+    transition: opacity .25s;
   }
   .v-select.single .selected-tag {
     background-color: transparent;
     border-color: transparent;
   }
-  .v-select.single.open .selected-tag,
-  .v-select.single.loading .selected-tag {
+  .v-select.single.open .selected-tag {
+    position: absolute;
+    opacity: .4;
+  }
+  .v-select.single.searching .selected-tag {
     display: none;
   }
   .v-select .selected-tag .close {
